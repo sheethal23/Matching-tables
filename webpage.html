@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="project.css">
+
+  <meta charset="utf-8">
+  <title>Example Page</title>
+</head>
+<body>
+	<div class="containerA">
+		<button onclick="addRowA()" type="button">Add Row A</button>
+		<button onclick="addColA()" type="button">Add Col A</button>
+		<button onclick="removeRowA()" type="button">Delete Row A</button>
+		<button onclick="removeColA()" type="button">Delete Col A</button>
+	</div>
+	
+	<div class="containerB">
+		<button onclick="addRowB()" type="button">Add Row B</button>
+		<button onclick="addColB()" type="button">Add Col B</button>
+		<button onclick="removeRowB()" type="button">Delete Row B</button>
+		<button onclick="removeColB()" type="button">Delete Col B</button>
+	</div>
+	
+	<br>
+	<br>
+	<div class="containerC">
+		<br>
+	    <br>
+		<strong>Percentage of Match: </strong> <input type="text" id="txtInput" placeholder="Enter Percentage" required>%
+		<label id="emptypercentage" for="txtInput"></label>
+		<br><br>
+		<button onclick="getTextbox()" type="button" id="btnUpdate">Update Table</button>
+		<br><br>
+		<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search term:</strong> <input type="text" id="txtSearch" placeholder="Enter Search item" required>
+		<label id="emptysearch" for="txtSearch"></label>
+		<br><br>
+		<button onclick="searchTables()" type="button" id="btnSearch">Search</button>
+		<br>
+		<br>
+		<p id="error"></p>
+		<br>
+		<br>
+	</div>
+	<p>
+	<div class="textA"><strong>TABLE-A</strong></div>
+	<div class="textB"><strong>TABLE-B</strong></div>
+	</p>
+	<br>
+  <table id="tableA"></table>
+  <table id="tableB"></table>
+  <script src="./javascript.js"></script>
+</body>
+</html>
